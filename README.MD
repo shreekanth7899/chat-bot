@@ -4,7 +4,8 @@ To Clone the Chat-bot Application use :
 
 To Install Dependencies 
 
-   npm install express socket.io
+   npm install express 
+   npm install socket.io
 
 To run the application
 

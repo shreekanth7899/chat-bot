@@ -1,25 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  #chat-container {
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  #message-box {
-    height: 300px;
-    overflow-y: scroll;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  #message-input {
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  button {
-    margin-top: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center the chat container horizontally */
+  align-items: center; /* Center the chat container vertically */
+  height: 100vh; /* Set the heig
+}
+
+#chat-container {
+  width: 400px; /* Increase width of chat container */
+  margin: 0 auto;
+}
+
+#message-box {
+  height: 450px; /* Increase height of message box */
+  width: 850px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+#message-box:hover {
+  border-color: #45a049;
+}
+
+.message {
+  margin-bottom: 10px; /* Add spacing between messages */
+}
+
+.user-message {
+  text-align: left; /* Align user's message to the left */
+}
+
+.chatbot-message {
+  text-align: right; /* Align chatbot's message to the right */
+}
+
+#message-input {
+  width: calc(100% - 22px);
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#send-button {
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #45a049;
+}

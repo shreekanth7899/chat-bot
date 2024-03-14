@@ -10,9 +10,10 @@
   <div id="chat-container">
     <div id="message-box"></div>
     <input type="text" id="message-input">
-    <button onclick="sendMessage()">Send</button>
+    <button id="send-button">Send</button>
   </div>
 
+  <script src="/socket.io/socket.io.js"></script> <!-- Include Socket.IO library -->
   <script src="script.js"></script>
 </body>
 </html>
